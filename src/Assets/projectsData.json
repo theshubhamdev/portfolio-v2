@@ -1,0 +1,23 @@
+[
+    {
+        "imgPath": "/1.png",
+        "title": "Instagram Clone",
+        "description": "This app, built with React Native and Typescript, enables users to create accounts, upload various types of posts, such as carousel and video, and utilizes AWS services for data storage.",
+        "ghLink": "https://github.com/theshubhamdev"
+
+    },
+    {
+        "imgPath": "/3.png",
+        "title": "Connect - Video Confrencing App",
+        "description": "This web application, built with Next.js, enables users to participate in video conferences with others without the need to create an account, and utilizes VideoSDK services to facilitate the video conferencing functionality.",
+        "ghLink": "https://github.com/theshubhamdev",
+        "demoLink": "https://connect.theshubham.in"
+    },
+    {
+        "imgPath": "/2.png",
+        "title": "VTrade - Invest with Virtual Money",
+        "description": "VTrade is a virtual stock investing app, built with React Native, that enables users to gain knowledge of investing in stocks without risking real money. It utilizes the Yahoo Finance API to retrieve stock data, and uses AWS services to store user information.",
+        "ghLink": "https://github.com/theshubhamdev",
+        "demoLink": "https://play.google.com/store/apps/details?id=com.vtrade"
+    }
+]

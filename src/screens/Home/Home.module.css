@@ -1,0 +1,193 @@
+.wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  #tsparticles {
+    position: fixed !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .homeHeader {
+    padding-top: 80px !important;
+  }
+  
+  .homeSection {
+    position: relative;
+    z-index: -1;
+    /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-bottom: 30px !important;
+    padding-top: 30px !important;
+  }
+  
+  .homeContent {
+    padding: 9rem 0 2rem !important;
+    color: whitesmoke;
+    text-align: left;
+  }
+  
+  .heading {
+    font-size: 2.4em !important;
+    padding-left: 50px !important;
+  }
+  
+  .headingName {
+    font-size: 2.5em !important;
+    padding-left: 45px !important;
+  }
+  
+  .mainName {
+    color: #B6EADA;
+  }
+  
+  .typewriterWrapper {
+    font-size: 2.2em !important;
+    color: #5B8FB9 !important;
+    font-weight: 600 !important;
+  }
+  .typewriterCursor {
+    font-size: 2.4em !important;
+    color: #5B8FB9 !important;
+  }
+  
+  @media (max-width: 767px) {
+    .typewriterWrapper {
+      font-size: 1.4em !important;
+      font-weight: 500 !important;
+      position: absolute !important;
+    }
+    .typewriterCursor {
+      display: none !important;
+    }
+  }
+  
+  .myAvtar {
+    justify-content: center !important;
+    padding-top: 9em !important;
+  }
+  
+  @media (max-width: 767px) {
+    .myAvtar {
+      padding-top: 2em !important;
+      padding-bottom: 2em !important;
+    }
+  }
+  
+  .homeAboutSection {
+    position: relative;
+    padding-bottom: 70px !important;
+    padding-top: 70px !important;
+  }
+  
+  .homeAboutDescription {
+    color: white !important;
+    padding-top: 100px !important;
+    padding-bottom: 20px !important;
+    text-align: center;
+  }
+  
+  .homeAboutBody {
+    padding-top: 50px;
+    font-size: 1.2em !important;
+    text-align: left;
+  }
+  
+  .homeAboutSocial {
+    text-align: center !important;
+    padding-top: 25px;
+    color: white !important;
+  }
+  
+  .homeAboutSocialLinks {
+    justify-content: center !important;
+    padding-top: 15px !important;
+    display: inline-block !important;
+    position: relative !important;
+    padding-inline-start: 0 !important;
+  }
+  
+  .homeSocialIcons {
+    position: relative !important;
+    display: inline-block !important;
+    width: 40px !important;
+    height: 40px !important;
+    text-align: center !important;
+    font-size: 1.2em !important;
+    line-height: 2em !important;
+    background: rgba(255, 255, 255, 0.972) !important;
+    border-radius: 50% !important;
+    transition: 0.5s !important;
+  }
+  
+  .homeSocialIcons::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #5B8FB9;
+    transition: 0.5s;
+    transform: scale(0.9);
+    z-index: -1;
+  }
+  
+  .homeSocialIcons:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #68a4d5;
+  }
+  
+  .homeSocialIcons:hover {
+    color: #68a4d5;
+    box-shadow: 0 0 5px #68a4d5;
+    text-shadow: 0 0 2px #68a4d5;
+  }
+  
+  .socialIcons {
+    display: inline-block !important;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .iconColour {
+    color: #301E67 !important;
+  }
+
+  .primaryColor {
+    color: var(--imp-text-color) !important;
+  }
