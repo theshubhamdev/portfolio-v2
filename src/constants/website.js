@@ -1,0 +1,1 @@
+export const v1 = 'https://v1.theshubham.in'
