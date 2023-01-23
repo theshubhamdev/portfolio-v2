@@ -13,6 +13,7 @@ import { CgFileDocument } from "react-icons/cg";
 import Link from "next/link";
 import styles from "./NavBar.module.css";
 import Image from "next/image";
+import { v1 } from '@/constants/website';
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -93,36 +94,17 @@ function NavBar() {
               </Link>
             </Nav.Item>
 
-            {/* <Nav.Item className={styles.navItem}>
+            <Nav.Item className={styles.navItem}>
             <Link
                 className={`${styles.navLink} nav-link`}
-                href="/resume"
+                href={v1}
+                target="_blank" 
+                rel="noopener noreferrer"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                <CgFileDocument style={{ marginBottom: "2px" }} /> Previous Website
               </Link>
-            </Nav.Item> */}
-
-            {/* <Nav.Item className={styles.navItem}>
-              <Nav.Link className={styles.navLink}
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item> */}
-
-            {/* <Nav.Item className={`${styles.navItem} ${styles.forkBtn}`}>
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className={styles.forkBtnInner}
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
