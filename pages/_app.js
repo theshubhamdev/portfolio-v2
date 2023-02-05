@@ -46,7 +46,7 @@ export default function App({ Component, pageProps }) {
           property="og:description"
           content="Passionate computer science engineer with real-world experience in software development seeking to apply theoretical and practical knowledge to innovate and solve complex problems."
         />
-        <meta property="og:image" content="https://www.theshubham.in/me.jpg" />
+        <meta property="og:image" itemprop="image" content="https://www.theshubham.in/me.jpg" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -59,7 +59,7 @@ export default function App({ Component, pageProps }) {
           property="twitter:description"
           content="Passionate computer science engineer with real-world experience in software development seeking to apply theoretical and practical knowledge to innovate and solve complex problems."
         />
-        <meta property="twitter:image" content="https://www.theshubham.in/me.jpg" />
+        <meta property="twitter:image" itemprop="image" content="https://www.theshubham.in/me.jpg" />
 
         <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
         <link rel="shortcut icon" href="https://www.theshubham.in/favicon.ico" type="image/x-icon" />
