@@ -1,12 +1,11 @@
 import { Configuration, OpenAIApi } from "openai";
 
 const configuration = new Configuration({
-  apiKey: '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',
+  apiKey: "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",
 });
 
 export default function hanlder(req, res) {
   const openai = new OpenAIApi(configuration);
-  console.log(req)
   const response = openai.createCompletion({
     model: "text-davinci-003",
     prompt:
@@ -18,7 +17,5 @@ export default function hanlder(req, res) {
     presence_penalty: 0.6,
     stop: [" Human:", " AI:"],
   });
-    console.log(response);
-//   res.status(200).json({ response })
   return response;
 }
