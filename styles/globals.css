@@ -7,9 +7,9 @@ body {
   /* background-image: linear-gradient(to left, rgb(20, 25, 41), rgb(15, 24, 35)); */
   background-image: linear-gradient(
     to left,
-    /* rgba(17, 16, 16, 0.582), */ #03001C,
-    /* rgba(12, 8, 24, 0.904) */#03001C
-    );
+    /* rgba(17, 16, 16, 0.582), */ #03001c,
+    /* rgba(12, 8, 24, 0.904) */ #03001c
+  );
 }
 
 .App {
@@ -52,11 +52,7 @@ body {
 }
 
 html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-     #03001C,
-     #240a72
-    );
+  --section-background-color: linear-gradient(to bottom left, #03001c, #240a72);
 
   --image-gradient: linear-gradient(
     to bottom left,
@@ -64,7 +60,7 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #5B8FB9;
+  --imp-text-color: #5b8fb9;
 }
 
 .primaryColor {
@@ -85,7 +81,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #03001C;
+  background-color: #03001c;
   background-image: url(/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -110,18 +106,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #03001C;
+  background: #03001c;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #03001C;
+  background: #03001c;
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #5B8FB9;
+  background: #5b8fb9;
   border-radius: 12px;
 }
 
@@ -131,12 +127,12 @@ button:focus {
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #5B8FB9 !important;
+  color: #5b8fb9 !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #5B8FB9 !important;
+  color: #5b8fb9 !important;
 }
 
 @media (max-width: 767px) {
@@ -161,7 +157,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #5B8FB9 !important;
+  background-color: #5b8fb9 !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -243,7 +239,7 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #5B8FB9 !important;
+  background-color: #5b8fb9 !important;
   border-color: #61dafb !important;
 }
 
@@ -261,4 +257,153 @@ button:focus {
   display: inline-block !important;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+/* ChatBot Styles */
+
+.app-chatbot-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  padding: 10px;
+  color: #fff;
+  background-color: #0d2d44;
+  border: none;
+  position: fixed;
+  bottom: 25px;
+  z-index: 9999;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.6s ease-in-out;
+}
+
+.app-chatbot-button:hover {
+  transform: scale(1.1);
+}
+
+.app-chatbot-container {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  right: 40px;
+  bottom: 55px;
+  z-index: 9999;
+  box-shadow: 5px 5px 13px rgba(91, 81, 81, 0.4);
+  border-radius: 5px;
+  position: fixed;
+}
+.app-chatbot-button-icon {
+  fill: #fff;
+}
+
+.chatbot-container {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 10;
+}
+
+.chatbot-container ::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+.chatbot-container ::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+/* Handle */
+.chatbot-container ::-webkit-scrollbar-thumb {
+  background: #5b8fb9;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+.chatbot-container ::-webkit-scrollbar-thumb:hover {
+  background: #5b8fb9;
+  border-radius: 12px;
+}
+
+.react-chatbot-kit-chat-container {
+  top: calc(50% - 250px);
+  right: 0px;
+  transition: width 300ms ease-out 0s;
+  width: 320px;
+  z-index: 99999;
+  height: 500px;
+}
+
+.react-chatbot-kit-chat-inner-container {
+}
+
+.react-chatbot-kit-chat-header {
+}
+
+.react-chatbot-kit-chat-input-container {
+}
+
+.react-chatbot-kit-chat-message-container {
+}
+
+.react-chatbot-kit-chat-input {
+}
+
+.react-chatbot-kit-chat-input-form {
+}
+
+.react-chatbot-kit-chat-input::placeholder {
+}
+
+.react-chatbot-kit-chat-btn-send {
+}
+
+.react-chatbot-kit-chat-btn-send-icon {
+}
+
+.react-chatbot-kit-chat-bot-message-container {
+}
+
+.react-chatbot-kit-chat-bot-avatar-container {
+}
+
+.react-chatbot-kit-chat-bot-avatar-icon {
+}
+
+.react-chatbot-kit-chat-bot-avatar-letter {
+}
+
+.react-chatbot-kit-chat-bot-message {
+}
+
+.react-chatbot-kit-chat-bot-message-arrow {
+}
+
+.react-chatbot-kit-chat-bot-loading-icon-container {
+}
+
+.chatbot-loader-container {
+}
+
+#chatbot-loader #chatbot-loader-dot1 {
+}
+
+#chatbot-loader #chatbot-loader-dot2 {
+}
+
+#chatbot-loader #chatbot-loader-dot3 {
+}
+
+.react-chatbot-kit-error {
+}
+
+.react-chatbot-kit-error-container {
+}
+
+.react-chatbot-kit-error-header {
+}
+
+.react-chatbot-kit-error-docs {
 }

@@ -11,7 +11,7 @@ function AboutCard() {
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="primaryColor">Shubham Lakhmani </span>
             from <span className="primaryColor"> Ayodhya, India.</span>
-            <br />I am a junior pursuing B.Tech in Computer Science and Engineering in SHUATS Prayagraj.
+            <br />I am pursuing B.Tech in Computer Science and Engineering in SHUATS Prayagraj.
             <br />
             <br />
             Apart from coding, some other activities that I enjoy!
