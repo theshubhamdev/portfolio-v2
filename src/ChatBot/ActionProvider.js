@@ -1,10 +1,10 @@
-import handler from "pages/api/chat/[message]";
-import React from "react";
+import React from 'react';
+import { handler } from './openai';
 
 const ActionProvider = ({ createChatBotMessage, setState, children }) => {
   const handleMessage = async (mes) => {
-    const message = await handler({ message: mes });
-    const botMessage = createChatBotMessage(message.data.choices[0].text);
+    const message = await handler(mes);
+    const botMessage = createChatBotMessage(message.data.choices[0].text.trim());
     setState((prev) => ({
       ...prev,
       messages: [...prev.messages, botMessage],

@@ -10,7 +10,6 @@ import { Flip, Fade } from "react-reveal";
 
 export default function Home() {
   const [showBot, toggleBot] = useState(false);
-
   return (
     <>
       <div className="chatbot-container">
